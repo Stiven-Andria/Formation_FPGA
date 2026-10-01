@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="video_out_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="video_out_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2546628000fs"></ZoomStartTime>
+      <ZoomEndTime time="2679228001fs"></ZoomEndTime>
+      <Cursor1Time time="2588228000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="192"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/video_out_tb/pxl_clk_tb" type="logic">
+      <obj_property name="ElementShortName">pxl_clk_tb</obj_property>
+      <obj_property name="ObjectShortName">pxl_clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/i_resetn_tb" type="logic">
+      <obj_property name="ElementShortName">i_resetn_tb</obj_property>
+      <obj_property name="ObjectShortName">i_resetn_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/VGA_HS_O_tb" type="logic">
+      <obj_property name="ElementShortName">VGA_HS_O_tb</obj_property>
+      <obj_property name="ObjectShortName">VGA_HS_O_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/VGA_VS_O_tb" type="logic">
+      <obj_property name="ElementShortName">VGA_VS_O_tb</obj_property>
+      <obj_property name="ObjectShortName">VGA_VS_O_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/VGA_R_tb" type="array">
+      <obj_property name="ElementShortName">VGA_R_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_R_tb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/VGA_G_tb" type="array">
+      <obj_property name="ElementShortName">VGA_G_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_G_tb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/VGA_B_tb" type="array">
+      <obj_property name="ElementShortName">VGA_B_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_B_tb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/tdata_tb" type="array">
+      <obj_property name="ElementShortName">tdata_tb[23:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_tb[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/tvalid_tb" type="logic">
+      <obj_property name="ElementShortName">tvalid_tb</obj_property>
+      <obj_property name="ObjectShortName">tvalid_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/tready_tb" type="logic">
+      <obj_property name="ElementShortName">tready_tb</obj_property>
+      <obj_property name="ObjectShortName">tready_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/uut/h_cntr_reg" type="array">
+      <obj_property name="ElementShortName">h_cntr_reg[11:0]</obj_property>
+      <obj_property name="ObjectShortName">h_cntr_reg[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/uut/v_cntr_reg" type="array">
+      <obj_property name="ElementShortName">v_cntr_reg[11:0]</obj_property>
+      <obj_property name="ObjectShortName">v_cntr_reg[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/uut/s_tready" type="logic">
+      <obj_property name="ElementShortName">s_tready</obj_property>
+      <obj_property name="ObjectShortName">s_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/hp" type="other">
+      <obj_property name="ElementShortName">hp</obj_property>
+      <obj_property name="ObjectShortName">hp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/video_out_tb/period" type="other">
+      <obj_property name="ElementShortName">period</obj_property>
+      <obj_property name="ObjectShortName">period</obj_property>
+   </wvobject>
+</wave_config>
