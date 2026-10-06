@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep  1 14:32:54 2026
+# Process ID: 3517
+# Current directory: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim
+# Command line: xsim -mode tcl -source {xsim.dir/tb_socora_gpio_behav/xsim_script.tcl}
+# Log file: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim/xsim.log
+# Journal file: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/tb_socora_gpio_behav/xsim_script.tcl
+# xsim {tb_socora_gpio_behav} -autoloadwcfg -tclbatch {/tmp/claude-1001/probe.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source /tmp/claude-1001/probe.tcl
+## proc show {t} {
+##   puts "---- t = $t ----"
+##   foreach s {
+##     /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_CLK0
+##     /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_RESET0_N
+##     /tb_socora_gpio/DUT/design_1_i/rst_ps7_0_50M_peripheral_aresetn
+##   } {
+##     if {[catch {set v [get_value -radix bin $s]} e]} { set v "ERR:$e" }
+##     puts [format "  %-70s = %s" $s $v]
+##   }
+## }
+## show 0
+---- t = 0 ----
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_CLK0          = U
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_RESET0_N      = U
+  /tb_socora_gpio/DUT/design_1_i/rst_ps7_0_50M_peripheral_aresetn        = 0
+## run 100 ns ;
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+==============================================================
+ tb_socora_gpio - acces AXI4-Lite au GPIO via le Zynq PS7 VIP
+ BAR_GPIO = 0x41200000  GPIO_WIDTH = 3
+==============================================================
+[0] : *ZYNQ_VIP_INFO : Setting Debug Level Info as 0
+[0] : *ZYNQ_VIP_INFO : Setting Stop On Error as 1
+[0 ns] INFO : assertion de FCLK_RESET0_N
+                   0 else checking line ......x
+WARNING: 10 ns tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.M_AXI_GP0.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+## show "100ns"
+---- t = 100ns ----
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_CLK0          = 0
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_RESET0_N      = 0
+  /tb_socora_gpio/DUT/design_1_i/rst_ps7_0_50M_peripheral_aresetn        = 0
+## run 900 ns ;
+## show "1us"
+---- t = 1us ----
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_CLK0          = 0
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_RESET0_N      = 1
+  /tb_socora_gpio/DUT/design_1_i/rst_ps7_0_50M_peripheral_aresetn        = 0
+## run 4 us   ;
+## show "5us"
+---- t = 5us ----
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_CLK0          = 0
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_RESET0_N      = 1
+  /tb_socora_gpio/DUT/design_1_i/rst_ps7_0_50M_peripheral_aresetn        = 1
+## run 10 us  ;
+## show "15us"
+---- t = 15us ----
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_CLK0          = 0
+  /tb_socora_gpio/DUT/design_1_i/processing_system7_0_FCLK_RESET0_N      = 1
+  /tb_socora_gpio/DUT/design_1_i/rst_ps7_0_50M_peripheral_aresetn        = 1
+## quit
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+INFO: [Common 17-206] Exiting xsim at Tue Sep  1 14:32:59 2026...

@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vitis HLS Report for 'DMA24b_mm2s'
+================================================================
+* Date:           Thu Sep  3 13:59:38 2026
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        DMA24b_mm2s_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.66 ns|  4.862 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.88>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%BAR_image_in_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %BAR_image_in" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 5 'read' 'BAR_image_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%image_h_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %image_h" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 6 'read' 'image_h_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%image_w_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %image_w" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 7 'read' 'image_w_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%image_h_c = alloca i64 1" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 8 'alloca' 'image_h_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%image_w_c = alloca i64 1" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 9 'alloca' 'image_w_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%mm_fifo = alloca i64 1" [../src/DMA24b_mm2s.cpp:73]   --->   Operation 10 'alloca' 'mm_fifo' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.53> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 256> <FIFO>
+ST_1 : Operation 11 [2/2] (3.88ns)   --->   "%call_ln75 = call void @DMA24b_mm2s_fetch, i128 %gmem, i128 %mm_fifo, i64 %BAR_image_in_read, i12 %image_w_read, i12 %image_h_read, i12 %image_w_c, i12 %image_h_c" [../src/DMA24b_mm2s.cpp:75]   --->   Operation 11 'call' 'call_ln75' <Predicate = true> <Delay = 3.88> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln75 = call void @DMA24b_mm2s_fetch, i128 %gmem, i128 %mm_fifo, i64 %BAR_image_in_read, i12 %image_w_read, i12 %image_h_read, i12 %image_w_c, i12 %image_h_c" [../src/DMA24b_mm2s.cpp:75]   --->   Operation 12 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln77 = call void @DMA24b_mm2s_streamout, i128 %mm_fifo, i24 %STR_video_out_V_data_V, i3 %STR_video_out_V_keep_V, i3 %STR_video_out_V_strb_V, i1 %STR_video_out_V_user_V, i1 %STR_video_out_V_last_V, i12 %image_w_c, i12 %image_h_c" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 13 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 4.23>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_3"   --->   Operation 14 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %STR_video_out_V_last_V, i1 %STR_video_out_V_user_V, i3 %STR_video_out_V_strb_V, i3 %STR_video_out_V_keep_V, i24 %STR_video_out_V_data_V, void @empty_0, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %gmem, void @empty, i32 0, i32 0, void @empty_3, i32 0, i32 57600, void @empty_5, void @empty_10, void @empty_3, i32 16, i32 16, i32 64, i32 16, void @empty_3, void @empty_3"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @mm_fifo_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i128 %mm_fifo, i128 %mm_fifo"   --->   Operation 17 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %mm_fifo, void @empty_8, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%empty_65 = specchannel i32 @_ssdm_op_SpecChannel, void @image_w_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i12 %image_w_c, i12 %image_w_c" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 19 'specchannel' 'empty_65' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln77 = specinterface void @_ssdm_op_SpecInterface, i12 %image_w_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 20 'specinterface' 'specinterface_ln77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%empty_66 = specchannel i32 @_ssdm_op_SpecChannel, void @image_h_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i12 %image_h_c, i12 %image_h_c" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 21 'specchannel' 'empty_66' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln77 = specinterface void @_ssdm_op_SpecInterface, i12 %image_h_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 22 'specinterface' 'specinterface_ln77' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/2] (4.23ns)   --->   "%call_ln77 = call void @DMA24b_mm2s_streamout, i128 %mm_fifo, i24 %STR_video_out_V_data_V, i3 %STR_video_out_V_keep_V, i3 %STR_video_out_V_strb_V, i1 %STR_video_out_V_user_V, i1 %STR_video_out_V_last_V, i12 %image_w_c, i12 %image_h_c" [../src/DMA24b_mm2s.cpp:77]   --->   Operation 23 'call' 'call_ln77' <Predicate = true> <Delay = 4.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln78 = ret" [../src/DMA24b_mm2s.cpp:78]   --->   Operation 24 'ret' 'ret_ln78' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.66ns, clock uncertainty: 1.8ns.
+
+ <State 1>: 3.88ns
+The critical path consists of the following:
+	wire read on port 'BAR_image_in' (../src/DMA24b_mm2s.cpp:77) [10]  (0 ns)
+	'call' operation ('call_ln75', ../src/DMA24b_mm2s.cpp:75) to 'DMA24b_mm2s_fetch' [25]  (3.88 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 4.23ns
+The critical path consists of the following:
+	'call' operation ('call_ln77', ../src/DMA24b_mm2s.cpp:77) to 'DMA24b_mm2s_streamout' [26]  (4.23 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

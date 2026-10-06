@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../src/tb.cpp in debug mode
+   Compiling ../../../../../src/DMA24b_mm2s.cpp in debug mode
+   Generating csim.exe
+Image 640x480 lue, format memoire = RGB888 packe (3 o/px), 16 pixel(s)/groupe, 3 mot(s) AXI4/groupe
+Echantillons de sortie ecrits dans /mnt/isaac_sbay0/lbo-ws/Temp/FPGA_EXPLEO/samples/output/
+Erreurs data  : 0
+Erreurs tlast : 0
+Erreurs tuser : 0
+TEST PASSED
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 307200
+The maximum depth reached by any of the 1 hls::stream() instances in the design is 0
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

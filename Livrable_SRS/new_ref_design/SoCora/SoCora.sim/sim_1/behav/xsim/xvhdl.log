@@ -1,0 +1,59 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_ps7_0_50M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.ip_user_files/bd/design_1/ipshared/5bbd/src/reg_space_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_space_v1_0_S00_AXI'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.ip_user_files/bd/design_1/ipshared/5bbd/src/reg_space_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reg_space_v1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.ip_user_files/bd/design_1/ip/design_1_reg_space_v2_0_0_0/sim/design_1_reg_space_v2_0_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_reg_space_v2_0_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_DMA24b_mm2s'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_DMA24b_mm2s_fetch'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s_streamout.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_DMA24b_mm2s_streamout'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_fifo_w12_d2_S.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_fifo_w12_d2_S_shiftReg'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_fifo_w12_d2_S'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_fifo_w128_d256_A.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_fifo_w128_d256_A_ram'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_fifo_w128_d256_A'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_gmem_m_axi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_gmem_m_axi'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_gmem_m_axi_reg_slice'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_gmem_m_axi_fifo'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_gmem_m_axi_buffer'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_gmem_m_axi_decoder'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_gmem_m_axi_throttl'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_gmem_m_axi_read'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_gmem_m_axi_write'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_mul_mul_11s_13ns_24_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_mul_mul_11s_13ns_24_4_1_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_mul_mul_11s_13ns_24_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_mul_mul_12ns_8ns_20_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_mul_mul_12ns_8ns_20_4_1_DSP48_1'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_mul_mul_12ns_8ns_20_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_regslice_both.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_regslice_both'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_regslice_both_w1'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_start_for_DMA24b_mm2s_streamout_U0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_start_for_DMA24b_mm2s_streamout_U0_shiftReg'
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s_start_for_DMA24b_mm2s_streamout_U0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DMA24bUnit_mm2s'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.ip_user_files/bd/design_1/ip/design_1_DMA24bUnit_mm2s_0_0/sim/design_1_DMA24bUnit_mm2s_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_DMA24bUnit_mm2s_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.ip_user_files/bd/design_1/ipshared/8f3d/src/video_out.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'video_out'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.ip_user_files/bd/design_1/ip/design_1_video_out_0_0/sim/design_1_video_out_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_video_out_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 's00_couplers_imp_O7FAN0'
+INFO: [VRFC 10-3107] analyzing entity 's00_couplers_imp_UYSKKA'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_interconnect_0_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_ps7_0_axi_periph_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/SoCora/SoCora.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/VHDL/new_ref_design/src/sim/tb_socora_gpio_stim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_socora_gpio_stim'

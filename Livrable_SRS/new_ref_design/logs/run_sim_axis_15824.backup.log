@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep  3 12:33:12 2026
+# Process ID: 15824
+# Current directory: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2
+# Command line: vivado -mode batch -notrace -nojournal -log logs/run_sim_axis.log -source scripts/run_sim_axis.tcl
+# Log file: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/logs/run_sim_axis.log
+# Journal file: 
+#-----------------------------------------------------------
+source scripts/run_sim_axis.tcl -notrace
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2020.2/data/ip'.
+INFO : deja present dans sim_1 -> tb_socora_gpio_stim.vhd
+INFO : deja present dans sim_1 -> Axi4s_driver.vhd
+INFO : deja present dans sim_1 -> Axi4s_monitor.vhd
+INFO : deja present dans sim_1 -> tb_environnement.vhd
+INFO : deja present dans sim_1 -> tb_socora_gpio.sv
+INFO : deja present dans sim_1 -> tb_socora_gpio_behav.wcfg
+INFO : deja present dans sim_1 -> tb_environnement_behav.wcfg
+INFO : block design non ouvert. Pour verifier le modele de simulation :
+       open_bd_design [get_files design_1.bd]
+       get_property SELECTED_SIM_MODEL [get_bd_cells /processing_system7_0]
+
+OK. Deux bancs disponibles dans sim_1 :
+  tb_socora_gpio   (top courant)  ./build_all.sh sim
+                   attendu : '=== TEST PASSED ===' et 33 verifications
+  tb_environnement                ./build_all.sh sim-axis
+                   attendu : C_IMG_HEIGHT lignes capturees, sans TIMEOUT,
+                   et src/sim/output/stream_out_0.txt identique a l'entree
+Depuis le GUI : Flow Navigator -> Run Simulation, apres avoir bascule le
+top avec  set_property top <nom> [get_filesets sim_1]
+select_tb.tcl charge. Procedures disponibles :
+  tb_gpio                 -> banc systeme Zynq/GPIO   (tb_socora_gpio)
+  tb_axis                 -> banc AXI4-Stream         (tb_environnement)
+  tb_clear_breakpoints    -> retire les points d'arret enregistres
+Puis : launch_simulation
+INFO : 3 point(s) d'arret retire(s) de tb_environnement_behav (copie dans TempBreakPointFile.txt.bak)
+INFO : sim_1 -> top=tb_environnement runtime=20ms vue=tb_environnement_behav.wcfg
+INFO : lancer maintenant  launch_simulation
+INFO : top de simulation = tb_environnement
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_environnement' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L axi_vip_v1_1_8 -L processing_system7_vip_v1_0_10 -L xilinx_vip -prj tb_environnement_vlog.prj
+xvhdl --incr --relax -prj tb_environnement_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+xelab -wto a3f026e018754fa680b034e71549393c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_environnement_behav xil_defaultlib.tb_environnement xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto a3f026e018754fa680b034e71549393c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_environnement_behav xil_defaultlib.tb_environnement xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_environnement_behav -key {Behavioral:sim_1:Functional:tb_environnement} -tclbatch {tb_environnement.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_environnement_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+open_wave_config /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_environnement_behav.wcfg
+source tb_environnement.tcl
+Note: 
+==============================================================
+ tb_environnement -- banc unitaire AXI4-Stream
+   images capturees : 1
+   lignes capturees : 32 (attendu 32)
+   pixels captures  : 20480 (attendu 20480)
+   pixels emis      : 20499
+   fichier ecrit    : ../../../../../src/sim/output/stream_out_0.txt
+ Verification (le diff doit etre VIDE en boucle simple) :
+   diff <(head -32 src/sim/sample_in_gray.txt) src/sim/output/stream_out_0.txt
+==============================================================
+Time: 205205 ns  Iteration: 0  Process: /tb_environnement/p_fin  File: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_environnement.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_environnement_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 20ms
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2928.680 ; gain = 0.000 ; free physical = 17642 ; free virtual = 49023
+INFO: [Simtcl 6-16] Simulation closed
+INFO : sim_1 restaure -- top=tb_socora_gpio runtime=1ms vue=tb_socora_gpio_behav.wcfg
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  3 12:33:28 2026...

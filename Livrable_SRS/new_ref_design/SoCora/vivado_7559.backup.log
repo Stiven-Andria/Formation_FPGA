@@ -1,0 +1,270 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep  3 10:41:48 2026
+# Process ID: 7559
+# Current directory: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora
+# Command line: vivado SoCora.xpr
+# Log file: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/vivado.log
+# Journal file: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project SoCora.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_socora_gpio' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -L axi_vip_v1_1_8 -L processing_system7_vip_v1_0_10 -L xilinx_vip -prj tb_socora_gpio_vlog.prj
+xvhdl --incr --relax -prj tb_socora_gpio_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+xelab -wto a3f026e018754fa680b034e71549393c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_8 -L processing_system7_vip_v1_0_10 -L axi_lite_ipif_v3_0_4 -L lib_cdc_v1_0_2 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_24 -L proc_sys_reset_v5_0_13 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_22 -L fifo_generator_v13_2_5 -L axi_data_fifo_v2_1_21 -L axi_crossbar_v2_1_23 -L axi_protocol_converter_v2_1_22 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_socora_gpio_behav xil_defaultlib.tb_socora_gpio xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto a3f026e018754fa680b034e71549393c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_8 -L processing_system7_vip_v1_0_10 -L axi_lite_ipif_v3_0_4 -L lib_cdc_v1_0_2 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_24 -L proc_sys_reset_v5_0_13 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_22 -L fifo_generator_v13_2_5 -L axi_data_fifo_v2_1_21 -L axi_crossbar_v2_1_23 -L axi_protocol_converter_v2_1_22 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_socora_gpio_behav xil_defaultlib.tb_socora_gpio xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-4969] module 'processing_system7_vip_v1_0_10_arb_wr' is instantiated multiple times from VHDL or from both Verilog and VHDL, elaboration result may be incorrect [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:11]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_gp.v:208]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5546]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5564]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_gp.v:292]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_hp.v:80]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_hp.v:89]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10256]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10274]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10275]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_hp.v:165]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_hp.v:174]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_hp.v:251]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_hp.v:260]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_hp.v:337]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2020.2_1118_1232/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_10_axi_hp.v:346]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
+WARNING: [VRFC 10-5021] port 'led2_tri_o' is not connected on this instance [/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_socora_gpio.sv:170]
+WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v:191]
+WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3809]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4376]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4631]
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/SoCora.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_socora_gpio_behav -key {Behavioral:sim_1:Functional:tb_socora_gpio} -tclbatch {tb_socora_gpio.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_socora_gpio_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//axi_gpio_0/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//axi_gpio_1/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//processing_system7_0/M_AXI_GP0
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/m00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/m00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/m01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/m01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/s00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/s00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/s00_couplers/auto_pc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/s00_couplers/auto_pc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/xbar/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/xbar/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_socora_gpio/DUT/design_1_i//ps7_0_axi_periph/xbar/S00_AXI
+Time resolution is 1 ps
+open_wave_config /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_socora_gpio_behav.wcfg
+WARNING: Simulation object /tb_socora_gpio/ps_clk_r was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/ps_porb_r was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/ps_srstb_r was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/FIXED_IO_ps_clk was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/FIXED_IO_ps_porb was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/FIXED_IO_ps_srstb was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/GPIO_BASE was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/OFF_GPIO_DATA was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/OFF_GPIO_TRI was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/PS_CLK_PERIOD was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/FCLK0_PERIOD was not found in the design.
+WARNING: Simulation object /tb_socora_gpio/POR_LOW_TIME was not found in the design.
+source tb_socora_gpio.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ms
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+==============================================================
+ tb_socora_gpio - acces AXI4-Lite au GPIO via le Zynq PS7 VIP
+ BAR_GPIO = 0x41200000  GPIO_WIDTH = 3
+==============================================================
+[0] : *ZYNQ_VIP_INFO : Setting Debug Level Info as 0
+[0] : *ZYNQ_VIP_INFO : Setting Stop On Error as 1
+[0 ns] INFO : assertion de FCLK_RESET0_N
+                   0 else checking line ......x
+WARNING: 10 ns tb_socora_gpio.DUT.design_1_i.processing_system7_0.inst.M_AXI_GP0.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+[1800 ns] INFO : reset termine, peripheral_aresetn = 1
+[1800 ns] PASS : valeur de reset : led_tri_o = 3'b000
+[2070 ns] INFO : READ  @0x41200000 = 0x00000000 (OKAY)
+[2070 ns] PASS : GPIO_DATA au reset : @0x41200000 = 0x00000000
+[2470 ns] INFO : WRITE @0x41200004 = 0x00000000 (OKAY)
+[2830 ns] INFO : READ  @0x41200004 = 0xffffffff (OKAY)
+[2830 ns] INFO : GPIO_TRI relu = 0xffffffff (non implemente en mode all-outputs, informatif)
+
+--- Marche d'un 1 ---
+[3270 ns] INFO : WRITE @0x41200000 = 0x00000001 (OKAY)
+[3370 ns] PASS : ecriture 0x00000001 : led_tri_o = 3'b001
+[3670 ns] INFO : READ  @0x41200000 = 0x00000001 (OKAY)
+[3670 ns] PASS : relecture 0x00000001 : @0x41200000 = 0x00000001
+[4070 ns] INFO : WRITE @0x41200000 = 0x00000002 (OKAY)
+[4170 ns] PASS : ecriture 0x00000002 : led_tri_o = 3'b010
+[4430 ns] INFO : READ  @0x41200000 = 0x00000002 (OKAY)
+[4430 ns] PASS : relecture 0x00000002 : @0x41200000 = 0x00000002
+[4770 ns] INFO : WRITE @0x41200000 = 0x00000004 (OKAY)
+[4870 ns] PASS : ecriture 0x00000004 : led_tri_o = 3'b100
+[5130 ns] INFO : READ  @0x41200000 = 0x00000004 (OKAY)
+[5130 ns] PASS : relecture 0x00000004 : @0x41200000 = 0x00000004
+
+--- Balayage exhaustif ---
+[5630 ns] INFO : WRITE @0x41200000 = 0x00000000 (OKAY)
+[5730 ns] PASS : ecriture 0x00000000 : led_tri_o = 3'b000
+[5990 ns] INFO : READ  @0x41200000 = 0x00000000 (OKAY)
+[5990 ns] PASS : relecture 0x00000000 : @0x41200000 = 0x00000000
+[6590 ns] INFO : WRITE @0x41200000 = 0x00000001 (OKAY)
+[6690 ns] PASS : ecriture 0x00000001 : led_tri_o = 3'b001
+[6950 ns] INFO : READ  @0x41200000 = 0x00000001 (OKAY)
+[6950 ns] PASS : relecture 0x00000001 : @0x41200000 = 0x00000001
+[7290 ns] INFO : WRITE @0x41200000 = 0x00000002 (OKAY)
+[7390 ns] PASS : ecriture 0x00000002 : led_tri_o = 3'b010
+[7650 ns] INFO : READ  @0x41200000 = 0x00000002 (OKAY)
+[7650 ns] PASS : relecture 0x00000002 : @0x41200000 = 0x00000002
+[8270 ns] INFO : WRITE @0x41200000 = 0x00000003 (OKAY)
+[8370 ns] PASS : ecriture 0x00000003 : led_tri_o = 3'b011
+[8630 ns] INFO : READ  @0x41200000 = 0x00000003 (OKAY)
+[8630 ns] PASS : relecture 0x00000003 : @0x41200000 = 0x00000003
+[9010 ns] INFO : WRITE @0x41200000 = 0x00000004 (OKAY)
+[9110 ns] PASS : ecriture 0x00000004 : led_tri_o = 3'b100
+[9410 ns] INFO : READ  @0x41200000 = 0x00000004 (OKAY)
+[9410 ns] PASS : relecture 0x00000004 : @0x41200000 = 0x00000004
+[9710 ns] INFO : WRITE @0x41200000 = 0x00000005 (OKAY)
+[9810 ns] PASS : ecriture 0x00000005 : led_tri_o = 3'b101
+[10110 ns] INFO : READ  @0x41200000 = 0x00000005 (OKAY)
+[10110 ns] PASS : relecture 0x00000005 : @0x41200000 = 0x00000005
+[10450 ns] INFO : WRITE @0x41200000 = 0x00000006 (OKAY)
+[10550 ns] PASS : ecriture 0x00000006 : led_tri_o = 3'b110
+[10810 ns] INFO : READ  @0x41200000 = 0x00000006 (OKAY)
+[10810 ns] PASS : relecture 0x00000006 : @0x41200000 = 0x00000006
+[11110 ns] INFO : WRITE @0x41200000 = 0x00000007 (OKAY)
+[11210 ns] PASS : ecriture 0x00000007 : led_tri_o = 3'b111
+[11510 ns] INFO : READ  @0x41200000 = 0x00000007 (OKAY)
+[11510 ns] PASS : relecture 0x00000007 : @0x41200000 = 0x00000007
+
+--- Motifs ponctuels ---
+[11810 ns] INFO : WRITE @0x41200000 = 0x00000005 (OKAY)
+[11910 ns] PASS : ecriture 0x00000005 : led_tri_o = 3'b101
+[12210 ns] INFO : READ  @0x41200000 = 0x00000005 (OKAY)
+[12210 ns] PASS : relecture 0x00000005 : @0x41200000 = 0x00000005
+[12610 ns] INFO : WRITE @0x41200000 = 0x00000002 (OKAY)
+[12710 ns] PASS : ecriture 0x00000002 : led_tri_o = 3'b010
+[12970 ns] INFO : READ  @0x41200000 = 0x00000002 (OKAY)
+[12970 ns] PASS : relecture 0x00000002 : @0x41200000 = 0x00000002
+[13310 ns] INFO : WRITE @0x41200000 = 0x00000007 (OKAY)
+[13410 ns] PASS : ecriture 0x00000007 : led_tri_o = 3'b111
+[13670 ns] INFO : READ  @0x41200000 = 0x00000007 (OKAY)
+[13670 ns] PASS : relecture 0x00000007 : @0x41200000 = 0x00000007
+[14090 ns] INFO : WRITE @0x41200000 = 0x00000000 (OKAY)
+[14190 ns] PASS : ecriture 0x00000000 : led_tri_o = 3'b000
+[14450 ns] INFO : READ  @0x41200000 = 0x00000000 (OKAY)
+[14450 ns] PASS : relecture 0x00000000 : @0x41200000 = 0x00000000
+
+--- Bits hors largeur ---
+[14930 ns] INFO : WRITE @0x41200000 = 0xfffffff8 (OKAY)
+[15030 ns] PASS : bits >= GPIO_WIDTH ignores : led_tri_o = 3'b000
+
+==============================================================
+ Verifications executees : 33
+ === TEST PASSED ===
+==============================================================
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+$finish called at time : 15430 ns : File "/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_socora_gpio.sv" Line 440
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_socora_gpio_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ms
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7882.980 ; gain = 104.082 ; free physical = 4714 ; free virtual = 42472
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  3 12:16:16 2026...

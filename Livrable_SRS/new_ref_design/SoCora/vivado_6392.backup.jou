@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep  3 12:18:35 2026
+# Process ID: 6392
+# Current directory: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora
+# Command line: vivado SoCora.xpr
+# Log file: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/vivado.log
+# Journal file: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/SoCora/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project SoCora.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_environnement [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_socora_gpio_behav.wcfg
+source tb_environnement.tcl
+run 50us
+run 50ms
+run 50ms
+add_force {/tb_environnement/u_driver/rst_i} -radix hex {1 0ns}
+add_force {/tb_environnement/u_monitor/rst_i} -radix hex {1 0ns}
+run 50ms
+run 500ms
+restart
+run 50ms
+add_bp {/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_environnement.vhd} 231
+run 500ms
+run 500ms
+run 500ms
+run 500ms
+save_wave_config {/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_socora_gpio_behav.wcfg}
+restart
+run 500ms
+run 500ms
+run 500ms
+run 500ms
+run 500ms
+run 500ms
+add_bp {/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_environnement.vhd} 218
+run 500ms
+run 500ms
+run 500ms
+add_bp {/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_environnement.vhd} 216
+close_sim
+launch_simulation

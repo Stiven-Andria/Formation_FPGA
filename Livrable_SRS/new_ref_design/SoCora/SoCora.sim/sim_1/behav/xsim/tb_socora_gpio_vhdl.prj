@@ -1,0 +1,26 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../SoCora.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/ipshared/5bbd/src/reg_space_v1_0_S00_AXI.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/ipshared/5bbd/src/reg_space_v1_0.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/ip/design_1_reg_space_v2_0_0_0/sim/design_1_reg_space_v2_0_0_0.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s_fetch.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s_streamout.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_fifo_w12_d2_S.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_fifo_w128_d256_A.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_gmem_m_axi.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_mul_mul_11s_13ns_24_4_1.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_mul_mul_12ns_8ns_20_4_1.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_regslice_both.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s_start_for_DMA24b_mm2s_streamout_U0.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/ipshared/6268/hdl/vhdl/DMA24bUnit_mm2s.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/ip/design_1_DMA24bUnit_mm2s_0_0/sim/design_1_DMA24bUnit_mm2s_0_0.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/ipshared/8f3d/src/video_out.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/ip/design_1_video_out_0_0/sim/design_1_video_out_0_0.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../SoCora.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+"../../../../../src/sim/tb_socora_gpio_stim.vhd" \
+
+# Do not sort compile order
+nosort

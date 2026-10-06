@@ -1,0 +1,2001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1788436779177">
+  <ports id="1" name="mm_fifo1" type="PortType" originalName="fifo" coreName="FIFO" coreId="3037426496" bitwidth="128" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="STR_video_out_V_data_V" type="PortType" originalName="STR_video_out" coreId="3037916672" bitwidth="24" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="STR_video_out_V_keep_V" type="PortType" originalName="STR_video_out" coreId="49" bitwidth="3" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="STR_video_out_V_strb_V" type="PortType" originalName="STR_video_out" coreId="3037935824" bitwidth="3" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="STR_video_out_V_user_V" type="PortType" originalName="STR_video_out" coreId="49" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="STR_video_out_V_last_V" type="PortType" originalName="STR_video_out" coreId="337" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="img_w" type="PortType" coreName="FIFO_SRL" coreId="3037913304" bitwidth="12" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="img_h" type="PortType" coreName="FIFO_SRL" coreId="3037961680" bitwidth="12" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="141" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="143" source_obj="//@ports.7" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="146" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="151" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="155" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="156" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="157" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="158" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="159" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="162" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="164" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="169" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.1/@node_objs.93" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="174" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2" is_back_edge="1"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="180" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="182" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="185" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="199" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="201" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="203" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="205" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="206" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="209" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="215" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="223" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="224" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="234" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="235" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.1"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.2"/>
+  <edges id="242" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.3"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.4"/>
+  <edges id="244" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.5"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="253" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="259" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="265" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="271" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="272" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="273" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="275" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@ports.1"/>
+  <edges id="276" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@ports.2"/>
+  <edges id="277" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@ports.3"/>
+  <edges id="278" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@ports.4"/>
+  <edges id="279" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@ports.5"/>
+  <edges id="280" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="286" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="292" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="298" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="305" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="306" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="308" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@ports.1"/>
+  <edges id="309" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@ports.2"/>
+  <edges id="310" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@ports.3"/>
+  <edges id="311" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@ports.4"/>
+  <edges id="312" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@ports.5"/>
+  <edges id="313" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="319" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="325" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="331" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="337" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="338" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="339" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="341" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@ports.1"/>
+  <edges id="342" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@ports.2"/>
+  <edges id="343" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@ports.3"/>
+  <edges id="344" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@ports.4"/>
+  <edges id="345" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@ports.5"/>
+  <edges id="346" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="352" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="358" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="364" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="370" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="371" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="372" source_obj="//@regions.0/@basic_blocks.1/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="374" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@ports.1"/>
+  <edges id="375" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@ports.2"/>
+  <edges id="376" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@ports.3"/>
+  <edges id="377" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@ports.4"/>
+  <edges id="378" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@ports.5"/>
+  <edges id="379" source_obj="//@regions.0/@basic_blocks.1/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="385" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="390" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="392" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="396" source_obj="//@regions.0/@basic_blocks.1/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="397" source_obj="//@regions.0/@basic_blocks.1/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="398" source_obj="//@regions.0/@basic_blocks.1/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="400" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@ports.1"/>
+  <edges id="401" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@ports.2"/>
+  <edges id="402" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@ports.3"/>
+  <edges id="403" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@ports.4"/>
+  <edges id="404" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@ports.5"/>
+  <edges id="405" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="411" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.43"/>
+  <edges id="415" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.44"/>
+  <edges id="419" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.45"/>
+  <edges id="423" source_obj="//@regions.0/@basic_blocks.1/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.46"/>
+  <edges id="424" source_obj="//@regions.0/@basic_blocks.1/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.46"/>
+  <edges id="425" source_obj="//@regions.0/@basic_blocks.1/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.46"/>
+  <edges id="427" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@ports.1"/>
+  <edges id="428" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@ports.2"/>
+  <edges id="429" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@ports.3"/>
+  <edges id="430" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@ports.4"/>
+  <edges id="431" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@ports.5"/>
+  <edges id="432" source_obj="//@regions.0/@basic_blocks.1/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.47"/>
+  <edges id="438" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.48"/>
+  <edges id="442" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.49"/>
+  <edges id="446" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="450" source_obj="//@regions.0/@basic_blocks.1/@node_objs.48" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="451" source_obj="//@regions.0/@basic_blocks.1/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="452" source_obj="//@regions.0/@basic_blocks.1/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="454" source_obj="//@regions.0/@basic_blocks.1/@node_objs.52" sink_obj="//@ports.1"/>
+  <edges id="455" source_obj="//@regions.0/@basic_blocks.1/@node_objs.52" sink_obj="//@ports.2"/>
+  <edges id="456" source_obj="//@regions.0/@basic_blocks.1/@node_objs.52" sink_obj="//@ports.3"/>
+  <edges id="457" source_obj="//@regions.0/@basic_blocks.1/@node_objs.52" sink_obj="//@ports.4"/>
+  <edges id="458" source_obj="//@regions.0/@basic_blocks.1/@node_objs.52" sink_obj="//@ports.5"/>
+  <edges id="459" source_obj="//@regions.0/@basic_blocks.1/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.52"/>
+  <edges id="465" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.53"/>
+  <edges id="469" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.54"/>
+  <edges id="473" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.55"/>
+  <edges id="477" source_obj="//@regions.0/@basic_blocks.1/@node_objs.53" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="478" source_obj="//@regions.0/@basic_blocks.1/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="479" source_obj="//@regions.0/@basic_blocks.1/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="481" source_obj="//@regions.0/@basic_blocks.1/@node_objs.57" sink_obj="//@ports.1"/>
+  <edges id="482" source_obj="//@regions.0/@basic_blocks.1/@node_objs.57" sink_obj="//@ports.2"/>
+  <edges id="483" source_obj="//@regions.0/@basic_blocks.1/@node_objs.57" sink_obj="//@ports.3"/>
+  <edges id="484" source_obj="//@regions.0/@basic_blocks.1/@node_objs.57" sink_obj="//@ports.4"/>
+  <edges id="485" source_obj="//@regions.0/@basic_blocks.1/@node_objs.57" sink_obj="//@ports.5"/>
+  <edges id="486" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.57"/>
+  <edges id="492" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.58"/>
+  <edges id="496" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.59"/>
+  <edges id="500" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.60"/>
+  <edges id="504" source_obj="//@regions.0/@basic_blocks.1/@node_objs.58" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.61"/>
+  <edges id="505" source_obj="//@regions.0/@basic_blocks.1/@node_objs.59" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.61"/>
+  <edges id="506" source_obj="//@regions.0/@basic_blocks.1/@node_objs.60" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.61"/>
+  <edges id="508" source_obj="//@regions.0/@basic_blocks.1/@node_objs.62" sink_obj="//@ports.1"/>
+  <edges id="509" source_obj="//@regions.0/@basic_blocks.1/@node_objs.62" sink_obj="//@ports.2"/>
+  <edges id="510" source_obj="//@regions.0/@basic_blocks.1/@node_objs.62" sink_obj="//@ports.3"/>
+  <edges id="511" source_obj="//@regions.0/@basic_blocks.1/@node_objs.62" sink_obj="//@ports.4"/>
+  <edges id="512" source_obj="//@regions.0/@basic_blocks.1/@node_objs.62" sink_obj="//@ports.5"/>
+  <edges id="513" source_obj="//@regions.0/@basic_blocks.1/@node_objs.61" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.62"/>
+  <edges id="519" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.63"/>
+  <edges id="523" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.64"/>
+  <edges id="526" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.65"/>
+  <edges id="528" source_obj="//@regions.0/@basic_blocks.1/@node_objs.63" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.66"/>
+  <edges id="529" source_obj="//@regions.0/@basic_blocks.1/@node_objs.64" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.66"/>
+  <edges id="530" source_obj="//@regions.0/@basic_blocks.1/@node_objs.65" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.66"/>
+  <edges id="532" source_obj="//@regions.0/@basic_blocks.1/@node_objs.67" sink_obj="//@ports.1"/>
+  <edges id="533" source_obj="//@regions.0/@basic_blocks.1/@node_objs.67" sink_obj="//@ports.2"/>
+  <edges id="534" source_obj="//@regions.0/@basic_blocks.1/@node_objs.67" sink_obj="//@ports.3"/>
+  <edges id="535" source_obj="//@regions.0/@basic_blocks.1/@node_objs.67" sink_obj="//@ports.4"/>
+  <edges id="536" source_obj="//@regions.0/@basic_blocks.1/@node_objs.67" sink_obj="//@ports.5"/>
+  <edges id="537" source_obj="//@regions.0/@basic_blocks.1/@node_objs.66" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.67"/>
+  <edges id="543" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.68"/>
+  <edges id="547" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.69"/>
+  <edges id="551" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.70"/>
+  <edges id="555" source_obj="//@regions.0/@basic_blocks.1/@node_objs.68" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.71"/>
+  <edges id="556" source_obj="//@regions.0/@basic_blocks.1/@node_objs.69" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.71"/>
+  <edges id="557" source_obj="//@regions.0/@basic_blocks.1/@node_objs.70" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.71"/>
+  <edges id="559" source_obj="//@regions.0/@basic_blocks.1/@node_objs.72" sink_obj="//@ports.1"/>
+  <edges id="560" source_obj="//@regions.0/@basic_blocks.1/@node_objs.72" sink_obj="//@ports.2"/>
+  <edges id="561" source_obj="//@regions.0/@basic_blocks.1/@node_objs.72" sink_obj="//@ports.3"/>
+  <edges id="562" source_obj="//@regions.0/@basic_blocks.1/@node_objs.72" sink_obj="//@ports.4"/>
+  <edges id="563" source_obj="//@regions.0/@basic_blocks.1/@node_objs.72" sink_obj="//@ports.5"/>
+  <edges id="564" source_obj="//@regions.0/@basic_blocks.1/@node_objs.71" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.72"/>
+  <edges id="570" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.73"/>
+  <edges id="574" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.74"/>
+  <edges id="578" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.75"/>
+  <edges id="582" source_obj="//@regions.0/@basic_blocks.1/@node_objs.73" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.76"/>
+  <edges id="583" source_obj="//@regions.0/@basic_blocks.1/@node_objs.74" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.76"/>
+  <edges id="584" source_obj="//@regions.0/@basic_blocks.1/@node_objs.75" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.76"/>
+  <edges id="586" source_obj="//@regions.0/@basic_blocks.1/@node_objs.77" sink_obj="//@ports.1"/>
+  <edges id="587" source_obj="//@regions.0/@basic_blocks.1/@node_objs.77" sink_obj="//@ports.2"/>
+  <edges id="588" source_obj="//@regions.0/@basic_blocks.1/@node_objs.77" sink_obj="//@ports.3"/>
+  <edges id="589" source_obj="//@regions.0/@basic_blocks.1/@node_objs.77" sink_obj="//@ports.4"/>
+  <edges id="590" source_obj="//@regions.0/@basic_blocks.1/@node_objs.77" sink_obj="//@ports.5"/>
+  <edges id="591" source_obj="//@regions.0/@basic_blocks.1/@node_objs.76" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.77"/>
+  <edges id="597" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.78"/>
+  <edges id="601" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.79"/>
+  <edges id="605" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.80"/>
+  <edges id="609" source_obj="//@regions.0/@basic_blocks.1/@node_objs.78" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.81"/>
+  <edges id="610" source_obj="//@regions.0/@basic_blocks.1/@node_objs.79" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.81"/>
+  <edges id="611" source_obj="//@regions.0/@basic_blocks.1/@node_objs.80" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.81"/>
+  <edges id="613" source_obj="//@regions.0/@basic_blocks.1/@node_objs.82" sink_obj="//@ports.1"/>
+  <edges id="614" source_obj="//@regions.0/@basic_blocks.1/@node_objs.82" sink_obj="//@ports.2"/>
+  <edges id="615" source_obj="//@regions.0/@basic_blocks.1/@node_objs.82" sink_obj="//@ports.3"/>
+  <edges id="616" source_obj="//@regions.0/@basic_blocks.1/@node_objs.82" sink_obj="//@ports.4"/>
+  <edges id="617" source_obj="//@regions.0/@basic_blocks.1/@node_objs.82" sink_obj="//@ports.5"/>
+  <edges id="618" source_obj="//@regions.0/@basic_blocks.1/@node_objs.81" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.82"/>
+  <edges id="624" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.83"/>
+  <edges id="628" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.84"/>
+  <edges id="632" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.85"/>
+  <edges id="636" source_obj="//@regions.0/@basic_blocks.1/@node_objs.83" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.86"/>
+  <edges id="637" source_obj="//@regions.0/@basic_blocks.1/@node_objs.84" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.86"/>
+  <edges id="638" source_obj="//@regions.0/@basic_blocks.1/@node_objs.85" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.86"/>
+  <edges id="640" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@ports.1"/>
+  <edges id="641" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@ports.2"/>
+  <edges id="642" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@ports.3"/>
+  <edges id="643" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@ports.4"/>
+  <edges id="644" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@ports.5"/>
+  <edges id="645" source_obj="//@regions.0/@basic_blocks.1/@node_objs.86" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.87"/>
+  <edges id="651" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.88"/>
+  <edges id="655" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.89"/>
+  <edges id="659" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.90"/>
+  <edges id="663" source_obj="//@regions.0/@basic_blocks.1/@node_objs.88" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.91"/>
+  <edges id="664" source_obj="//@regions.0/@basic_blocks.1/@node_objs.89" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.91"/>
+  <edges id="665" source_obj="//@regions.0/@basic_blocks.1/@node_objs.90" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.91"/>
+  <edges id="667" source_obj="//@regions.0/@basic_blocks.1/@node_objs.92" sink_obj="//@ports.1"/>
+  <edges id="668" source_obj="//@regions.0/@basic_blocks.1/@node_objs.92" sink_obj="//@ports.2"/>
+  <edges id="669" source_obj="//@regions.0/@basic_blocks.1/@node_objs.92" sink_obj="//@ports.3"/>
+  <edges id="670" source_obj="//@regions.0/@basic_blocks.1/@node_objs.92" sink_obj="//@ports.4"/>
+  <edges id="671" source_obj="//@regions.0/@basic_blocks.1/@node_objs.92" sink_obj="//@ports.5"/>
+  <edges id="672" source_obj="//@regions.0/@basic_blocks.1/@node_objs.91" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.92"/>
+  <edges id="676" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.92"/>
+  <edges id="677" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.93"/>
+  <edges id="680" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.94"/>
+  <edges id="906" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="907" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="908" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="909" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="910" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.92"/>
+  <edges id="911" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.82" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.87"/>
+  <edges id="912" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.77" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.82"/>
+  <edges id="913" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.72" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.77"/>
+  <edges id="914" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.67" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.72"/>
+  <edges id="915" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.62" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.67"/>
+  <edges id="916" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.57" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.62"/>
+  <edges id="917" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.57"/>
+  <edges id="918" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.52"/>
+  <edges id="919" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.47"/>
+  <edges id="920" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="921" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="922" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="923" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="924" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="925" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="926" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <blocks id="28" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_37</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="img_w_1" lineNumber="34" originalName="img_w" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DMA24b_mm2s_streamout" bitwidth="12" opcode="read" m_display="0" m_delay="2.43" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="34" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <dataInputObjs>img_w</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="img_h_1" lineNumber="34" originalName="img_h" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="DMA24b_mm2s_streamout" bitwidth="12" opcode="read" m_display="0" m_delay="2.43" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="34" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <dataInputObjs>img_h</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="trunc_ln" lineNumber="37" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="trunc_ln_reg_731" coreId="3037225312" contextFuncName="DMA24b_mm2s_streamout" bitwidth="8" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="37" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="zext_ln37" lineNumber="37" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="zext_ln37_fu_440_p1" coreId="3037224976" contextFuncName="DMA24b_mm2s_streamout" bitwidth="9" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="37" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="last_i" lineNumber="37" originalName="last_i" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="last_i_fu_443_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="DMA24b_mm2s_streamout" bitwidth="9" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.91" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="37" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="cast" lineNumber="34" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="grp_fu_725_p00" coreId="0" contextFuncName="DMA24b_mm2s_streamout" bitwidth="20" opcode="zext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="34" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="cast1" lineNumber="37" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="grp_fu_725_p10" coreId="0" contextFuncName="DMA24b_mm2s_streamout" bitwidth="20" opcode="zext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="37" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="bound" lineNumber="34" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="mul_mul_12ns_8ns_20_4_1_U10" coreName="DSP48" implIndex="dsp" control="auto" opType="mul" coreId="119" contextFuncName="DMA24b_mm2s_streamout" bitwidth="20" opcode="mul" nodeLatency="3" m_display="0" m_delay="2.15" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="34" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln38" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." coreId="1137" contextFuncName="DMA24b_mm2s_streamout" opcode="br" nodeLabel="3.0" m_display="0" m_delay="1.58" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+      <controlInputObjs>block_37</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/DMA24b_mm2s.cpp">
+      <validLinenumbers>34</validLinenumbers>
+      <validLinenumbers>37</validLinenumbers>
+      <validLinenumbers>38</validLinenumbers>
+      <validLinenumbers>77</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="138" name=".exit" type="BlockType">
+    <controlInputObjs>block_37</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="137" name="_ln77" lineNumber="77" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="DMA24b_mm2s" opcode="ret" nodeLabel="21.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/DMA24b_mm2s.cpp">
+      <validLinenumbers>77</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="16" typeName="Pipeline" id="775" pipe_depth="17" RegionName="line_loop_group_loop">
+    <basic_blocks id="37" name="block_37" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>._crit_edge.loopexit.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.exit</controlOutputObjs>
+      <controlOutputObjs>._crit_edge.loopexit.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="indvar_flatten" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." coreId="4227858560" contextFuncName="DMA24b_mm2s_streamout" bitwidth="20" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>entry</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit.i</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="j" lineNumber="38" originalName="j" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." coreId="1729" contextFuncName="DMA24b_mm2s_streamout" bitwidth="12" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>entry</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit.i</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="i" originalName="i" coreId="3037940616" bitwidth="8" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>entry</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit.i</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="add_ln38" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="add_ln38_fu_449_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="DMA24b_mm2s_streamout" bitwidth="20" opcode="add" nodeLabel="4.0" m_display="0" m_delay="2.19" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="zext_ln39" lineNumber="39" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="zext_ln39_fu_455_p1" coreId="0" contextFuncName="DMA24b_mm2s_streamout" bitwidth="9" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="39" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln39" lineNumber="39" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="icmp_ln39_fu_459_p2" opType="icmp" coreId="2129" contextFuncName="DMA24b_mm2s_streamout" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.66" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="39" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln38" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="icmp_ln38_fu_464_p2" opType="icmp" coreId="3037940048" contextFuncName="DMA24b_mm2s_streamout" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="2.44" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln38" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." coreId="49" contextFuncName="DMA24b_mm2s_streamout" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>._crit_edge.loopexit.i</controlInputObjs>
+        <controlInputObjs>.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../src/DMA24b_mm2s.cpp">
+        <validLinenumbers>38</validLinenumbers>
+        <validLinenumbers>39</validLinenumbers>
+        <validLinenumbers>77</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="136" name="._crit_edge.loopexit.i" type="BlockType">
+      <controlInputObjs>block_37</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_37</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="select_ln38" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="select_ln38_fu_469_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="DMA24b_mm2s_streamout" bitwidth="8" opcode="select" nodeLabel="4.0" m_display="0" m_delay="1.24" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="add_ln38_1" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="add_ln38_1_fu_486_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="DMA24b_mm2s_streamout" bitwidth="12" opcode="add" nodeLabel="5.0" m_display="0" m_delay="1.54" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="select_ln38_1" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="select_ln38_1_fu_492_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="DMA24b_mm2s_streamout" bitwidth="12" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.69" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="trunc_ln38" lineNumber="38" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="trunc_ln38_fu_499_p1" coreId="49" contextFuncName="DMA24b_mm2s_streamout" bitwidth="8" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="38" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="zext_ln36" lineNumber="36" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="zext_ln36_fu_477_p1" coreId="3037953312" contextFuncName="DMA24b_mm2s_streamout" bitwidth="9" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="36" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_V" lineNumber="145" originalName="tmp.V" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="auto" opType="fifo" coreId="78" contextFuncName="read" bitwidth="128" opcode="read" nodeLabel="5.0" m_display="0" m_delay="2.43" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="read"/>
+        <dataInputObjs>mm_fifo1</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="tmp_V_1" lineNumber="145" originalName="tmp.V" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="auto" opType="fifo" coreId="78" contextFuncName="read" bitwidth="128" opcode="read" nodeLabel="10.0" m_display="0" m_delay="2.43" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="read"/>
+        <dataInputObjs>mm_fifo1</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="tmp_V_2" lineNumber="145" originalName="tmp.V" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="auto" opType="fifo" coreId="78" contextFuncName="read" bitwidth="128" opcode="read" nodeLabel="15.0" m_display="0" m_delay="2.43" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="read"/>
+        <dataInputObjs>mm_fifo1</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="video_elt_out_last_V" lineNumber="36" originalName="video_elt_out.last.V" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="video_elt_out_last_V_fu_481_p2" opType="icmp" coreId="49" contextFuncName="DMA24b_mm2s_streamout" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.66" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="36" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="trunc_ln674" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="trunc_ln674_fu_503_p1" coreId="0" contextFuncName="get" bitwidth="8" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="p_Result_6_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_34_i_reg_787" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="p_Result_8_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_418" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="p_Result_s" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_s_fu_507_p4" coreId="0" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="5.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="or_ln51" lineNumber="51" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="or_ln51_fu_518_p2" opType="or" coreId="0" contextFuncName="DMA24b_mm2s_streamout" bitwidth="8" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="51" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="tmp" lineNumber="51" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="tmp_fu_523_p4" coreId="0" contextFuncName="DMA24b_mm2s_streamout" bitwidth="4" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="51" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="or_ln" lineNumber="51" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="or_ln_fu_533_p3" coreId="0" contextFuncName="DMA24b_mm2s_streamout" bitwidth="12" opcode="bitconcatenate" nodeLabel="5.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="51" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="video_elt_out_user_V" lineNumber="51" originalName="video_elt_out.user.V" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="video_elt_out_user_V_fu_541_p2" opType="icmp" coreId="0" contextFuncName="DMA24b_mm2s_streamout" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.99" m_topoIndex="32" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="51" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="5.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="p_Result_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_366" coreId="4228300630" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="p_Result_1_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_370" coreId="4228300630" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="p_Result_2_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_374" coreId="4228300630" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="p_Result_1" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_1_fu_548_p4" coreId="4228300630" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="6.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="6.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="p_Result_5_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_378" coreId="4228300630" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="p_Result_7_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_382" coreId="321" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="p_Result_9_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_386" coreId="737" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="p_Result_2" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_2_fu_559_p4" coreId="674" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="7.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="7.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="p_Result_10_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_390" coreId="362" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="p_Result_11_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_394" coreId="602" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="p_Result_12_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_398" coreId="874" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="p_Result_3" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_3_fu_570_p4" coreId="0" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="8.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="8.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="p_Result_13_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_402" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="p_Result_14_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_406" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="p_Result_15_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_410" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="p_Result_4" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_4_fu_581_p4" coreId="0" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="9.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="p_Result_16_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_414" coreId="539107901" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="trunc_ln674_1" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="trunc_ln674_1_fu_592_p1" coreId="1663056755" contextFuncName="get" bitwidth="8" opcode="trunc" nodeLabel="10.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="p_Result_18_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_34_i_reg_787" coreId="3037971304" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="p_Result_5" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_5_fu_596_p4" coreId="3037972080" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="10.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="p_Result_19_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_418" coreId="745305392" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="p_Result_20_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_366" coreId="3037976472" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="p_Result_21_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_370" coreId="3037977856" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="p_Result_6" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_6_fu_607_p4" coreId="4227858560" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="11.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="11.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="p_Result_22_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_374" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="p_Result_23_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_378" coreId="3037984544" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="p_Result_24_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_382" coreId="4227858560" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="p_Result_7" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_7_fu_618_p4" coreId="4227858560" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="12.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="12.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="p_Result_25_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_386" coreId="3037988024" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="p_Result_26_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_390" coreId="4227858560" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="p_Result_27_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_394" coreId="4227858560" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="p_Result_8" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_8_fu_629_p4" coreId="3037990928" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="13.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="13.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="p_Result_28_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_398" coreId="18801" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="p_Result_29_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_402" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="p_Result_30_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_406" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="p_Result_9" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_9_fu_640_p4" coreId="3037998208" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="14.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="14.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="p_Result_31_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_410" coreId="3038001096" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="p_Result_32_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_414" coreId="132" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="10.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="trunc_ln674_2" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="trunc_ln674_2_fu_651_p1" coreId="49" contextFuncName="get" bitwidth="8" opcode="trunc" nodeLabel="15.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="p_Result_10" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_10_fu_655_p4" coreId="3038004441" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="15.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="15.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="p_Result_34_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_34_i_reg_787" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="p_Result_35_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_418" coreId="3038008560" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="p_Result_36_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_366" coreId="3038009736" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="p_Result_11" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_11_fu_666_p4" coreId="0" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="16.0" m_display="0" m_topoIndex="101" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="16.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="p_Result_37_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_370" coreId="1936018748" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="p_Result_38_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_374" coreId="1718558835" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="p_Result_39_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_378" coreId="574043700" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="p_Result_12" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_12_fu_676_p4" coreId="543452769" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="17.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="17.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="p_Result_40_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_382" coreId="1684959075" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="p_Result_41_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_386" coreId="542329928" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="p_Result_42_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_390" coreId="1953724787" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="p_Result_13" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_13_fu_687_p4" coreId="1330405197" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="18.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="18.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="p_Result_43_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_394" coreId="536885049" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="p_Result_44_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_398" coreId="4515" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="p_Result_45_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_402" coreId="4807" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="p_Result_14" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_14_fu_698_p4" coreId="5099" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="19.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="19.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="p_Result_46_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_406" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="p_Result_47_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_410" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="99" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="p_Result_48_i" lineNumber="674" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="reg_414" coreId="0" contextFuncName="get" bitwidth="8" opcode="partselect" nodeLabel="15.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="674" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="get"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="p_Result_15" lineNumber="414" originalName="__Result__" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" fileDirectory=".." rtlName="p_Result_15_fu_714_p4" coreId="0" contextFuncName="operator_assign_24_false" bitwidth="24" opcode="bitconcatenate" nodeLabel="20.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h" linenumber="414" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="operator=&amp;lt;24, false&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="STR_video_out_V_data_V_write_ln304" lineNumber="304" fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="20.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h" linenumber="304" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>STR_video_out_V_data_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_user_V</dataOutputObjs>
+        <dataOutputObjs>STR_video_out_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="i_1" lineNumber="39" originalName="i" fileName="../src/DMA24b_mm2s.cpp" fileDirectory=".." rtlName="i_1_fu_709_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="DMA24b_mm2s_streamout" bitwidth="8" opcode="add" nodeLabel="19.0" m_display="0" m_delay="1.91" m_topoIndex="109" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="77" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s"/>
+        <inlineStackInfo fileName="../src/DMA24b_mm2s.cpp" linenumber="39" fileDirectory="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/hls" functionName="DMA24b_mm2s_streamout"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_37</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../src/DMA24b_mm2s.cpp">
+        <validLinenumbers>38</validLinenumbers>
+        <validLinenumbers>36</validLinenumbers>
+        <validLinenumbers>51</validLinenumbers>
+        <validLinenumbers>39</validLinenumbers>
+        <validLinenumbers>77</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>145</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h">
+        <validLinenumbers>304</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h">
+        <validLinenumbers>674</validLinenumbers>
+        <validLinenumbers>414</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <regnodes realName="cast1_reg_741">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_418">
+    <nodeIds>84</nodeIds>
+    <nodeIds>110</nodeIds>
+  </regnodes>
+  <regnodes realName="video_elt_out_last_V_reg_777">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="cast_reg_736">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_398">
+    <nodeIds>71</nodeIds>
+    <nodeIds>99</nodeIds>
+    <nodeIds>125</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_374">
+    <nodeIds>61</nodeIds>
+    <nodeIds>89</nodeIds>
+    <nodeIds>115</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_194">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_731">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_394">
+    <nodeIds>70</nodeIds>
+    <nodeIds>96</nodeIds>
+    <nodeIds>124</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_370">
+    <nodeIds>60</nodeIds>
+    <nodeIds>86</nodeIds>
+    <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_414">
+    <nodeIds>79</nodeIds>
+    <nodeIds>105</nodeIds>
+    <nodeIds>131</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln38_1_reg_782">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_378">
+    <nodeIds>64</nodeIds>
+    <nodeIds>90</nodeIds>
+    <nodeIds>116</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_410">
+    <nodeIds>76</nodeIds>
+    <nodeIds>104</nodeIds>
+    <nodeIds>130</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln38_reg_757">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_reg_183">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_390">
+    <nodeIds>69</nodeIds>
+    <nodeIds>95</nodeIds>
+    <nodeIds>121</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_205">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="bound_reg_752">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_792">
+    <nodeIds>134</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln38_reg_771">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="last_i_reg_746">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_386">
+    <nodeIds>66</nodeIds>
+    <nodeIds>94</nodeIds>
+    <nodeIds>120</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_382">
+    <nodeIds>65</nodeIds>
+    <nodeIds>91</nodeIds>
+    <nodeIds>119</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln38_reg_767">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln39_reg_762">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_406">
+    <nodeIds>75</nodeIds>
+    <nodeIds>101</nodeIds>
+    <nodeIds>129</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_402">
+    <nodeIds>74</nodeIds>
+    <nodeIds>100</nodeIds>
+    <nodeIds>126</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Result_34_i_reg_787">
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_366">
+    <nodeIds>59</nodeIds>
+    <nodeIds>85</nodeIds>
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <expressionNodes realName="p_Result_14_fu_698">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_7_fu_618">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln39_fu_455">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_226">
+    <nodeIds>52</nodeIds>
+    <nodeIds>84</nodeIds>
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cast_fu_432">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_306">
+    <nodeIds>70</nodeIds>
+    <nodeIds>96</nodeIds>
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln38_fu_499">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="last_i_fu_443">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="video_elt_out_last_V_fu_481">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_10_fu_655">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_356">
+    <nodeIds>79</nodeIds>
+    <nodeIds>105</nodeIds>
+    <nodeIds>131</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_236">
+    <nodeIds>59</nodeIds>
+    <nodeIds>85</nodeIds>
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_4_fu_581">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="video_elt_out_user_V_fu_541">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_276">
+    <nodeIds>65</nodeIds>
+    <nodeIds>91</nodeIds>
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_209">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln37_fu_440">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln674_2_fu_651">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_336">
+    <nodeIds>75</nodeIds>
+    <nodeIds>101</nodeIds>
+    <nodeIds>129</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_216">
+    <nodeIds>51</nodeIds>
+    <nodeIds>81</nodeIds>
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_8_fu_629">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_266">
+    <nodeIds>64</nodeIds>
+    <nodeIds>90</nodeIds>
+    <nodeIds>116</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_11_fu_666">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cast1_fu_436">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_346">
+    <nodeIds>76</nodeIds>
+    <nodeIds>104</nodeIds>
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_3_fu_570">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln_fu_533">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln674_1_fu_592">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln38_fu_464">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln674_fu_503">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_15_fu_714">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_326">
+    <nodeIds>74</nodeIds>
+    <nodeIds>100</nodeIds>
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln51_fu_518">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_2_fu_559">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_709">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_9_fu_640">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_256">
+    <nodeIds>61</nodeIds>
+    <nodeIds>89</nodeIds>
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_422">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln39_fu_459">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_12_fu_676">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_fu_469">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_296">
+    <nodeIds>69</nodeIds>
+    <nodeIds>95</nodeIds>
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_6_fu_607">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_13_fu_687">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_phi_fu_187">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_198">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_316">
+    <nodeIds>71</nodeIds>
+    <nodeIds>99</nodeIds>
+    <nodeIds>125</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_523">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln38_fu_449">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_1_fu_548">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln38_1_fu_492">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_5_fu_596">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_246">
+    <nodeIds>60</nodeIds>
+    <nodeIds>86</nodeIds>
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_507">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln38_1_fu_486">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln36_fu_477">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_286">
+    <nodeIds>66</nodeIds>
+    <nodeIds>94</nodeIds>
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_725">
+    <nodeIds>26</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="img_w_1_read_fu_142">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_read_fu_154">
+    <nodeIds>46</nodeIds>
+    <nodeIds>47</nodeIds>
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="img_h_1_read_fu_148">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_160">
+    <nodeIds>58</nodeIds>
+    <nodeIds>63</nodeIds>
+    <nodeIds>68</nodeIds>
+    <nodeIds>73</nodeIds>
+    <nodeIds>78</nodeIds>
+    <nodeIds>83</nodeIds>
+    <nodeIds>88</nodeIds>
+    <nodeIds>93</nodeIds>
+    <nodeIds>98</nodeIds>
+    <nodeIds>103</nodeIds>
+    <nodeIds>108</nodeIds>
+    <nodeIds>113</nodeIds>
+    <nodeIds>118</nodeIds>
+    <nodeIds>123</nodeIds>
+    <nodeIds>128</nodeIds>
+    <nodeIds>133</nodeIds>
+  </ioNodes>
+  <ioPorts name="STR_video_out_V_data_V">
+    <contents name="write">
+      <nodeIds>58</nodeIds>
+      <nodeIds>63</nodeIds>
+      <nodeIds>68</nodeIds>
+      <nodeIds>73</nodeIds>
+      <nodeIds>78</nodeIds>
+      <nodeIds>83</nodeIds>
+      <nodeIds>88</nodeIds>
+      <nodeIds>93</nodeIds>
+      <nodeIds>98</nodeIds>
+      <nodeIds>103</nodeIds>
+      <nodeIds>108</nodeIds>
+      <nodeIds>113</nodeIds>
+      <nodeIds>118</nodeIds>
+      <nodeIds>123</nodeIds>
+      <nodeIds>128</nodeIds>
+      <nodeIds>133</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_keep_V">
+    <contents name="write">
+      <nodeIds>58</nodeIds>
+      <nodeIds>63</nodeIds>
+      <nodeIds>68</nodeIds>
+      <nodeIds>73</nodeIds>
+      <nodeIds>78</nodeIds>
+      <nodeIds>83</nodeIds>
+      <nodeIds>88</nodeIds>
+      <nodeIds>93</nodeIds>
+      <nodeIds>98</nodeIds>
+      <nodeIds>103</nodeIds>
+      <nodeIds>108</nodeIds>
+      <nodeIds>113</nodeIds>
+      <nodeIds>118</nodeIds>
+      <nodeIds>123</nodeIds>
+      <nodeIds>128</nodeIds>
+      <nodeIds>133</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_last_V">
+    <contents name="write">
+      <nodeIds>58</nodeIds>
+      <nodeIds>63</nodeIds>
+      <nodeIds>68</nodeIds>
+      <nodeIds>73</nodeIds>
+      <nodeIds>78</nodeIds>
+      <nodeIds>83</nodeIds>
+      <nodeIds>88</nodeIds>
+      <nodeIds>93</nodeIds>
+      <nodeIds>98</nodeIds>
+      <nodeIds>103</nodeIds>
+      <nodeIds>108</nodeIds>
+      <nodeIds>113</nodeIds>
+      <nodeIds>118</nodeIds>
+      <nodeIds>123</nodeIds>
+      <nodeIds>128</nodeIds>
+      <nodeIds>133</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_strb_V">
+    <contents name="write">
+      <nodeIds>58</nodeIds>
+      <nodeIds>63</nodeIds>
+      <nodeIds>68</nodeIds>
+      <nodeIds>73</nodeIds>
+      <nodeIds>78</nodeIds>
+      <nodeIds>83</nodeIds>
+      <nodeIds>88</nodeIds>
+      <nodeIds>93</nodeIds>
+      <nodeIds>98</nodeIds>
+      <nodeIds>103</nodeIds>
+      <nodeIds>108</nodeIds>
+      <nodeIds>113</nodeIds>
+      <nodeIds>118</nodeIds>
+      <nodeIds>123</nodeIds>
+      <nodeIds>128</nodeIds>
+      <nodeIds>133</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="STR_video_out_V_user_V">
+    <contents name="write">
+      <nodeIds>58</nodeIds>
+      <nodeIds>63</nodeIds>
+      <nodeIds>68</nodeIds>
+      <nodeIds>73</nodeIds>
+      <nodeIds>78</nodeIds>
+      <nodeIds>83</nodeIds>
+      <nodeIds>88</nodeIds>
+      <nodeIds>93</nodeIds>
+      <nodeIds>98</nodeIds>
+      <nodeIds>103</nodeIds>
+      <nodeIds>108</nodeIds>
+      <nodeIds>113</nodeIds>
+      <nodeIds>118</nodeIds>
+      <nodeIds>123</nodeIds>
+      <nodeIds>128</nodeIds>
+      <nodeIds>133</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="img_h">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="img_w">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="mm_fifo1">
+    <contents name="read">
+      <nodeIds>46</nodeIds>
+      <nodeIds>47</nodeIds>
+      <nodeIds>48</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="4" latency="4"/>
+    </states>
+    <states id="2">
+      <operations id="26" stage="3" latency="4"/>
+    </states>
+    <states id="3">
+      <operations id="26" stage="2" latency="4"/>
+    </states>
+    <states id="4">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="4"/>
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+    </states>
+    <states id="14">
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+    </states>
+    <states id="15">
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+    </states>
+    <states id="16">
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+    </states>
+    <states id="17">
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+    </states>
+    <states id="18">
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+    </states>
+    <states id="19">
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+    </states>
+    <states id="20">
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+    </states>
+    <states id="21">
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+    </states>
+    <states id="22">
+      <operations id="137" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="DMA24b_mm2s_streamout" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="3" mMaxLatency="3">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="line_loop_group_loop" mII="16" mDepth="17" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>136</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>138</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

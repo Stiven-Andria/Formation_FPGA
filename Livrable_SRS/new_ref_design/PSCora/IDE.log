@@ -1,0 +1,16 @@
+14:36:23 INFO  : Registering command handlers for Vitis TCF services
+14:36:24 INFO  : Result from executing command 'getProjects': SoCora
+14:36:24 INFO  : Platform repository initialization has completed.
+14:36:25 INFO  : Result from executing command 'getPlatforms': 
+14:36:26 INFO  : Result from executing command 'getProjects': SoCora
+14:36:26 INFO  : Result from executing command 'getPlatforms': SoCora|/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/PSCora/SoCora/export/SoCora/SoCora.xpfm
+14:36:26 INFO  : Result from executing command 'reportPlatform': {SoCora={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+14:36:26 INFO  : Result from executing command 'reportPlatform': {SoCora={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+14:36:26 INFO  : Result from executing command 'reportPlatform': {SoCora={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+14:36:27 INFO  : plnx-install-location is set to ''
+14:36:27 INFO  : Successfully done query RDI_DATADIR 
+14:36:33 INFO  : Checking for BSP changes to sync application flags for project 'xgpio_example_1'...
+14:36:34 INFO  : Result from executing command 'reportPlatform': {SoCora={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+14:36:34 INFO  : Result from executing command 'reportPlatform': {SoCora={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+14:36:34 INFO  : Result from executing command 'reportPlatform': {SoCora={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a9, CpuInstance=ps7_cortexa9_0}}}
+14:36:37 INFO  : Checking for BSP changes to sync application flags for project 'xuartps_hello_world_example_1'...

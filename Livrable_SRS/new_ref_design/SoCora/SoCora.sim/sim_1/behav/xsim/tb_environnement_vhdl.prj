@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../src/sim/Axi4s_driver.vhd" \
+"../../../../../src/sim/Axi4s_monitor.vhd" \
+"../../../../../src/sim/tb_environnement.vhd" \
+
+# Do not sort compile order
+nosort

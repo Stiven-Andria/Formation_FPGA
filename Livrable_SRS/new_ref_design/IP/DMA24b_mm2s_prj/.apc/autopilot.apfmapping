@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="DMA24b_mm2s.cpp" path="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/src/DMA24b_mm2s.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/DMA_RGB24b/src/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

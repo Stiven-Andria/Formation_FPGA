@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "E:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../SoCora.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../SoCora.gen/sources_1/bd/design_1/ipshared/34f8/hdl" --include "../../../../SoCora.gen/sources_1/bd/design_1/ipshared/d0f7" --include "../../../../SoCora.gen/sources_1/bd/design_1/ipshared/8713/hdl" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v" \
+"../../../bd/design_1/ip/design_1_axis_switch_0_1/sim/design_1_axis_switch_0_1.v" \
+"../../../bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
